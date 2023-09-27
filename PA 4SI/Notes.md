@@ -1,54 +1,36 @@
-**
-
-MACHINE PROXMOX
+## MACHINE PROXMOX
 
   
+Il faut un serveur physique chez le client mais :
 
-- Il faut un serveur physique chez le client mais :
+ Installer manuellement PROXMOX ? 
 
-- Installer manuellement PROXMOX ? 
+ Avantage : Utiliser toutes les ressources pour la virtualisation
 
-- Avantage : Utiliser toutes les ressources pour la virtualisation
+ Probleme : Où mettre la webapp ? (on suppose que cest un docker) / PE sur le poste de l'admin
 
-- Probleme : Où mettre la webapp ? (on suppose que cest un docker)
+ Possibilité d'un ISO customisé (avec fichiers des reponses de l'install : technique unattended installation)
 
-- Possibilité d'un ISO customisé (avec fichiers des reponses de l'install : technique unattended installation)
 
-  
 
-- Installer une distrib pour tout heberger (Debian) : 
+ Installer une distrib pour tout heberger (Debian) : 
 
-- Avantages : Permettra de scripter l'install de Proxmox / Permettra de mettre la webapp dessus
+ Avantages : Permettra de scripter l'install de Proxmox / Permettra de mettre la webapp dessus
 
-- Probleme : on aura un OS  + Proxmox : on perd en ressources
+ Probleme : on aura un OS  + Proxmox : on perd en ressources
 
-  
 
-IMPOSSIBLE DE CREER CETTE MACHINE A PARTIR DE NOTRE WEBAPP, AVOIR UNE MACHINE AVEC PROXMOX EST UN PRE-REQUIS, on va juste essayer de trouver la meilleure solution qu'on peut proposer au client
+
+*IMPOSSIBLE DE CREER CETTE MACHINE A PARTIR DE NOTRE WEBAPP, AVOIR UNE MACHINE AVEC PROXMOX EST UN PRE-REQUIS, on va juste essayer de trouver la meilleure solution qu'on peut proposer au client
 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
 
-TECHNOS POUR LA WEBAPP
+## TECHNOS POUR LA WEBAPP
 
   
 
@@ -66,14 +48,24 @@ Propositions pour le Back-end :
 
   
 
-DASHBOARDS : 
+## DASHBOARDS : 
 
-  
-
-- 1 pour edit le/les fichiers de conf Terraform (pour déployer les machines , préciser les ressources etc …) possibilités template + full custom
+### INSTALLER : sur le poste d'un admin
+ * 1 pour edit le/les fichiers de conf Terraform (pour déployer les machines , préciser les ressources etc …) possibilités template + full custom
     
 - 1 pour edit le/les fichiers de conf Ansible (la config systèmes : création de users etc …) possibilités template + full custom
+
+-  page de DOC
+
+
+### WEB APP COMPLETE  :
+
+Syteme d'authentification avec LDAPS (seul les membres du groupe IT peuvent reussir a s authentifier et seuls les membres du groupe DC-admins peuvent accéder à l interface en edit + MFA)
+
+* 1 pour edit le/les fichiers de conf Terraform (pour déployer les machines , préciser les ressources etc …) possibilités template + full custom
     
+- 1 pour edit le/les fichiers de conf Ansible (la config systèmes : création de users etc …) possibilités template + full custom
+
 - 1 pour visualiser les logs 
     
 - 1 pour monitorer les VMs (graphes de perf depuis proxmox)
@@ -85,18 +77,7 @@ DASHBOARDS : 
 
 Système de droits sur les users (admin avec MFA …)
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
@@ -104,7 +85,7 @@ Système de droits sur les users (admin avec MFA …)
   
   
 
-INFRA
+## INFRA
 
   
 
@@ -114,7 +95,9 @@ Machines Windows :
 
 - 2 DC (répliqué / redondé)
 
-- 1 poste client (pour les logs)
+- 1 poste client (pour generer les logs) (deply la machine)
+
+* les machiens ephemeres pour se connecter en vpn (soit win soit linux)
 
 - ...
 
@@ -122,18 +105,11 @@ Machines Windows :
 
 Contenaires Docker : 
 
- L'agent de LOGS 
+ 1 contenaire pour Logstach
+ 
+ 1 contenaire ElasticSearch (indexation, filtre)
 
- un serveur web
-
- ...
-
-  
-
-Machines Linux
-
-1 poste client (pour les logs)
-
+ un serveur web la vraie webapp
   
 
 Trouver un moyen d’implementer kubernetes 
@@ -141,29 +117,22 @@ Trouver un moyen d’implementer kubernetes 
   
   
 
-SYSTEME DE SAUVEGARDE!!!!!
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+## SYSTEME DE SAUVEGARDE!!!!!
+
+save tout le proxmox
   
 
-LE LOG AGENT
+
+
+
+
+
+
+## LE LOG AGENT
 
   
 
@@ -182,10 +151,5 @@ LE LOG AGENT
 
 Ajouter un système d’alertes par importance par mails et notifs (omg un appli mobile en plus ??? )
 
-  
 
 Choisir des indexs de logs précis pour créer des scripts de mitigation et les configurer à être déployés automatiquement dès qu’un event avec cet ID remonte
-
-  
-  
-**
