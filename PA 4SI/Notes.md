@@ -116,7 +116,12 @@ Trouver un moyen d’implementer kubernetes 
 
   
   
-
+VLAN 1 : SRV WINDOWS (2 DC (redondés) + 1 DHCP et FILES ) 
+VLAN 2 : Contenaires ? 
+VLAN 3 : LOG et SOC (ip des contenaires qu on va créé 1 ou 2 ou plus on verra) 
+VLAN 4 : les machines clientes 
+VLAN 5 : sauvegardes? 
+VLAN 6 : transfert de logs (les inputs pour la webapp) aura un VPN qui pointe dessus
 
 
 
