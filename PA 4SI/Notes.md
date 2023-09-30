@@ -45,7 +45,7 @@ Propositions pour le Front-end : 
 Propositions pour le Back-end :
 
 - JS :D : un modèle MVC (Models, View, Controllers) pour les endpoints de l'API
-
+comme ansible, le backend se connectera en SSH sur les machines pour 'executer les scripts de remédiati'
   
 
 ## DASHBOARDS : 
@@ -74,8 +74,6 @@ Syteme d'authentification avec LDAPS (seul les membres du groupe IT peuvent reus
     
 
   
-
-Système de droits sur les users (admin avec MFA …)
 
 
   
