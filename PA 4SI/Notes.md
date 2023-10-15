@@ -66,9 +66,9 @@ Syteme d'authentification avec LDAPS (seul les membres du groupe IT peuvent reus
     
 - 1 pour edit le/les fichiers de conf Ansible (la config systèmes : création de users etc …) possibilités template + full custom
 
-- 1 pour visualiser les logs 
+- 1 pour visualiser les logs / mettre en place des triggers pour des ID de logs précis
     
-- 1 pour monitorer les VMs (graphes de perf depuis proxmox)
+- 1 pour monitorer les VMs (à voir)
     
 - 1 page de DOC
     
@@ -156,3 +156,77 @@ Ajouter un système d’alertes par importance par mails et notifs (omg un appli
 
 
 Choisir des indexs de logs précis pour créer des scripts de mitigation et les configurer à être déployés automatiquement dès qu’un event avec cet ID remonte
+
+
+
+
+------------
+
+
+
+    
+
+AVANT DECEMBRE :
+
+INSTALLER :
+	Docker Linux (lancer sript commandes priomxo (template...) + terraform installé sur le docker +ansible installé sur le docker) + une commande de lancement (en bash ou python)
+
+INFRA :
+Firewall :  Pfesnse
+	Securité : 
+		- Accessible que en VLAN Management (à voir)
+		- Accessible en LDAP (seuls les utilisateurs du groupe DC admin peuvent accèder) + on garde l'admin locale du pfsense
+		- Redondance avec CARP (Master - Slave) Ip virtuelle à config sur les machines
+		- Backup en cas d'incident
+		- Anti DDOS 
+		- Plugin Adresse MAC dans les logs (nom à trouver)
+		- Règles en interne clean (par port) + description de la règle
+		- PAS DE DHCP SUR LE PFSENSE
+		...
+
+VPN : 
+	- OpenVPN sur proxmox (inconvénient : il faut ouvrir le port sur le VRAI ROUTEUR)
+	- Gestion des users : créer sur le fichier depuis le serveur OpenVPN
+	- Ajouter MFA (voir si c'est gratos)
+	- Voir pour pointer le réseau de destination du réseau VPN
+
+SRVWINDOWS :
+	- ROLES : 
+		- ADDS 
+		- DHCP pour tous les VLANs
+		- DNS 
+		- WSUS (pour le serveur et les machines clientes Windows)
+	- Sécurité sur le DC : 
+		!!!! PARTIE A DOCUMENTER EN DETAILS POUR LE CLIENT !!!!
+		- Disable NTLM et utiliser que Kerberos
+		- Rendu du PA Pentest AD pour les mesures de sécurité contre les attaques de base
+		- Voir pour LDAPS
+		- LAPS pour gestion des admins locaux des postes clients (OVERKILL)
+	- Automatiser le process ?
+	- SYSMON
+
+CONTENEURS :
+	- APACHE2 + DB
+
+
+
+APRES DECEMBRE :
+
+Gestion des sauvegardes 
+
+Intégrer LOGGEUR :
+	- SYSLOG + PARSEUR PYTHON ou ELK 
+
+WEB APP COMPLETE  :
+
+Syteme d'authentification avec LDAPS (seul les membres du groupe IT peuvent reussir a s authentifier et seuls les membres du groupe DC-admins peuvent accéder à l interface en edit + MFA)
+
+* 1 pour edit le/les fichiers de conf Terraform (pour déployer les machines , préciser les ressources etc …) possibilités template + full custom
+    
+- 1 pour edit le/les fichiers de conf Ansible (la config systèmes : création de users etc …) possibilités template + full custom
+
+- 1 pour visualiser les logs / mettre en place des triggers pour des ID de logs précis
+    
+- 1 pour monitorer les VMs (à voir)
+    
+- 1 page de DOC

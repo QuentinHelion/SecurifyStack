@@ -13,18 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROJET ANNUEL 4SI SEO - QH.md",
+                "file": "Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "cff30c128f4ec0f4",
-        "type": "tabs",
-        "children": [
+          },
+          {
+            "id": "43658c033a738e04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform and Proxmox.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
           {
             "id": "0e75b7111dfd922f",
             "type": "leaf",
@@ -36,8 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b255a0343282479c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Terraform and Proxmox.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -103,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PROJET ANNUEL 4SI SEO - QH.md",
+                "file": "Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PROJET ANNUEL 4SI SEO - QH.md",
+                "file": "Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PROJET ANNUEL 4SI SEO - QH.md"
+                "file": "Notes.md"
               }
             }
           }
@@ -164,9 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c00f1bdc830cc51f",
+  "active": "0e75b7111dfd922f",
   "lastOpenFiles": [
+    "Terraform and Proxmox.md",
+    "PROJET ANNUEL 4SI SEO - QH.md",
     "Notes.md",
-    "PROJET ANNUEL 4SI SEO - QH.md"
+    "USEFUL LINKS.md"
   ]
 }
