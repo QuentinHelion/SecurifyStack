@@ -161,7 +161,7 @@ Choisir des indexs de logs précis pour créer des scripts de mitigation et les 
 
 
 ------------
-
+![[Pasted image 20231018071936.png]]
 
 
     
