@@ -1,0 +1,11 @@
+- Disable NTLM = LLMNR Poisining
+- Permissions on who is able to add a computer to the domain = Illegal domain joining
+- Do not activate Kerberos Pre-Auth (disabled by default) = ASREPROAST
+- Scan with pingcastle and use the score as proof for the client
+- Protect Shared folders (check permissions) = SMB attacks
+- Change default Password policy
+- Check for users with SPN = Kerberoasting
+- Local admin policy / Use LAPS / Check for local admins on machines (https://www.it-connect.fr/active-directory-comment-obtenir-la-liste-des-administrateurs-locaux-de-tous-les-ordinateurs/)
+- Check for DCSYNC privileges
+- KRBTGT account password = Ticket Forging
+- LDAPS for webapp and Firewall users
