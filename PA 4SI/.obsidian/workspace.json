@@ -20,6 +20,66 @@
             }
           },
           {
+            "id": "5fa859bbae3977c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "APRES-DECEMBRE/LOGGEUR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa6a5cf841df576c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "APRES-DECEMBRE/LOGGEUR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bd2aea67111a6b7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "86fe1ceda2038579",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AVANT-DECEMBRE/INSTALLER.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac0c305d28d030f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AVANT-DECEMBRE/VPN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "43658c033a738e04",
             "type": "leaf",
             "state": {
@@ -37,7 +97,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows Servers Security.md",
+                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc785cd7b7a11dee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AVANT-DECEMBRE/PFSENSE.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows Servers Security.md",
+                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows Servers Security.md",
+                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows Servers Security.md"
+                "file": "AVANT-DECEMBRE/Windows Servers Security.md"
               }
             }
           }
@@ -183,13 +255,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e75b7111dfd922f",
+  "active": "bd2aea67111a6b7b",
   "lastOpenFiles": [
+    "AVANT-DECEMBRE/VPN.md",
+    "AVANT-DECEMBRE/INSTALLER.md",
+    "AVANT-DECEMBRE/PFSENSE.md",
+    "AVANT-DECEMBRE/CONTENEURS.md",
+    "AVANT-DECEMBRE/Windows Servers Security.md",
     "Notes.md",
-    "Windows Servers Security.md",
-    "Pasted image 20231018071936.png",
-    "PROJET ANNUEL 4SI SEO - QH.md",
+    "APRES-DECEMBRE/WEB APP COMPLETE.md",
+    "APRES-DECEMBRE/LOGGEUR.md",
+    "APRES-DECEMBRE/GESTION DES SAUVEGARDES.md",
+    "APRES-DECEMBRE",
+    "AVANT-DECEMBRE",
     "Terraform and Proxmox.md",
+    "PROJET ANNUEL 4SI SEO - QH.md",
+    "Pasted image 20231018071936.png",
     "USEFUL LINKS.md",
     "Pasted image 20231018071911.png"
   ]

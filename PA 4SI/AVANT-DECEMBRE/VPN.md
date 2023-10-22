@@ -1,0 +1,4 @@
+- OpenVPN sur proxmox (inconvénient : il faut ouvrir le port sur le VRAI ROUTEUR)
+- Gestion des users : créer sur le fichier depuis le serveur OpenVPN
+- Ajouter MFA (voir si c'est gratos)
+- Voir pour pointer le réseau de destination du réseau VPN
