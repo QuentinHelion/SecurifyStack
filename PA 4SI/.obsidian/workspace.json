@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "c0998e966edf7388",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "APRES-DECEMBRE/TEMPLATES CREATION.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "86fe1ceda2038579",
             "type": "leaf",
             "state": {
@@ -128,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -194,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
+                "file": "APRES-DECEMBRE/TEMPLATES CREATION.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AVANT-DECEMBRE/Windows Servers Security.md",
+                "file": "APRES-DECEMBRE/TEMPLATES CREATION.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AVANT-DECEMBRE/Windows Servers Security.md"
+                "file": "APRES-DECEMBRE/TEMPLATES CREATION.md"
               }
             }
           }
@@ -255,14 +267,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd2aea67111a6b7b",
+  "active": "308a73a51438df43",
   "lastOpenFiles": [
-    "AVANT-DECEMBRE/VPN.md",
+    "AVANT-DECEMBRE/Windows Servers Security.md",
+    "APRES-DECEMBRE/TEMPLATES CREATION.md",
+    "Notes.md",
     "AVANT-DECEMBRE/INSTALLER.md",
+    "AVANT-DECEMBRE/VPN.md",
     "AVANT-DECEMBRE/PFSENSE.md",
     "AVANT-DECEMBRE/CONTENEURS.md",
-    "AVANT-DECEMBRE/Windows Servers Security.md",
-    "Notes.md",
     "APRES-DECEMBRE/WEB APP COMPLETE.md",
     "APRES-DECEMBRE/LOGGEUR.md",
     "APRES-DECEMBRE/GESTION DES SAUVEGARDES.md",
