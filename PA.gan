@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-11-13" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-12-31" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="en_US">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="200" order="0"/>
-        <field id="tpd4" name="Date de début" width="75" order="1"/>
-        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#00ff00]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="210" order="0"/>
-        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -94,12 +94,23 @@
         <task id="21" name="Etape 3" color="#8cb6ce" meeting="false" start="2023-11-19" duration="45" complete="0" thirdDate="2023-11-10" thirdDate-constraint="0" expand="false">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
             <depend id="27" type="2" difference="0" hardness="Strong"/>
-            <task id="24" name="Installation VPN automatisée" color="#8cb6ce" meeting="false" start="2023-11-19" duration="45" complete="0" thirdDate="2023-11-19" thirdDate-constraint="0" expand="true"/>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+            <task id="24" name="Installation VPN automatisée" color="#8cb6ce" meeting="false" start="2023-11-19" duration="45" complete="0" thirdDate="2023-11-19" thirdDate-constraint="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="26" name="Etude firewall" color="#8cb6ce" meeting="false" start="2023-11-19" duration="45" complete="0" thirdDate="2023-11-19" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="25" name="Etape 4" color="#000000" meeting="false" start="2024-01-03" duration="15" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true">
+        <task id="25" name="Etape 4" color="#000000" meeting="false" start="2024-01-03" duration="30" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true">
+            <task id="29" name="Validation config VPN" color="#8cb6ce" meeting="false" start="2024-01-03" duration="30" complete="0" thirdDate="2023-11-19" thirdDate-constraint="0" expand="true"/>
             <task id="27" name="Mise en place des règle FW" color="#8cb6ce" meeting="false" start="2024-01-03" duration="15" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true"/>
-            <task id="28" name="tâche_28" meeting="false" start="2024-01-03" duration="1" complete="0" expand="true"/>
+            <task id="28" name="Création d'un serveur sftp" color="#8cb6ce" meeting="false" start="2024-01-03" duration="7" complete="0" thirdDate="2024-01-03" thirdDate-constraint="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="Mise en place des règle de sécurité srv sftp" color="#8cb6ce" meeting="false" start="2024-01-10" duration="7" complete="0" thirdDate="2024-01-03" thirdDate-constraint="0" expand="true"/>
+            <task id="31" name="Etude technologies app web" color="#8cb6ce" meeting="false" start="2024-01-03" duration="15" complete="0" thirdDate="2024-01-03" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="Etude technologies installeur" color="#8cb6ce" meeting="false" start="2024-01-03" duration="15" complete="0" thirdDate="2024-01-03" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources/>
