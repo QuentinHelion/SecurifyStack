@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-04-01" view-index="0" gantt-divider-location="471" resource-divider-location="300" version="3.2.3247" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-03-31" view-index="0" gantt-divider-location="471" resource-divider-location="300" version="3.2.3247" locale="en_US">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="227" order="0"/>
-        <field id="tpd4" name="Date de début" width="139" order="1"/>
-        <field id="tpd5" name="Date de fin" width="104" order="2"/>
+        <field id="tpd3" name="Name" width="227" order="0"/>
+        <field id="tpd4" name="Begin date" width="139" order="1"/>
+        <field id="tpd5" name="End date" width="104" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#000000 #00ff00]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="210" order="0"/>
-        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -131,8 +131,17 @@
             </task>
             <task id="40" name="Configuration VPN côté PfSense" color="#8cb6ce" meeting="false" start="2024-03-28" duration="10" complete="0" thirdDate="2024-03-08" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="41" name="Etape 7" color="#000000" meeting="false" start="2024-04-07" duration="20" complete="0" thirdDate="2024-04-07" thirdDate-constraint="0" expand="true">
-            <task id="42" name="WebApp - Début backend" color="#8cb6ce" meeting="false" start="2024-04-07" duration="20" complete="0" thirdDate="2024-04-01" thirdDate-constraint="0" expand="true"/>
+        <task id="41" name="Etape 7" color="#000000" meeting="false" start="2024-04-07" duration="25" complete="0" thirdDate="2024-04-07" thirdDate-constraint="0" expand="false">
+            <task id="42" name="WebApp - Refonte backend" color="#8cb6ce" meeting="false" start="2024-04-07" duration="20" complete="0" thirdDate="2024-04-01" thirdDate-constraint="0" expand="true"/>
+            <task id="43" name="Installeur - Mise en place de l'architecture" color="#8cb6ce" meeting="false" start="2024-04-07" duration="25" complete="0" thirdDate="2024-04-07" thirdDate-constraint="0" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="46" name="Etapes 8" meeting="false" start="2024-05-02" duration="33" complete="0" expand="true">
+            <task id="44" name="Installeur - Installation de toutes les VMs" color="#8cb6ce" meeting="false" start="2024-05-02" duration="18" complete="0" thirdDate="2024-04-07" thirdDate-constraint="0" expand="true">
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" name="Installeur - Setup automatique du réseau" color="#8cb6ce" meeting="false" start="2024-05-20" duration="15" complete="0" thirdDate="2024-04-07" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources/>
