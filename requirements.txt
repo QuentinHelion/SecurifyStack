@@ -1,4 +1,6 @@
+pysftp
 proxmoxer
 requests
 urllib3
 python-dotenv
+paramiko
