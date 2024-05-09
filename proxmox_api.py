@@ -8,7 +8,7 @@ urllib3.disable_warnings()
 load_dotenv()
 
 def create_proxmox_api(api_token):
-    proxmox_host = os.getenv("PROXMOX_HOST")
+    proxmox_host = os.getenv("PROXMOXHOST")
     username = os.getenv("USERNAME")
     token_id= os.getenv("TOKENID")
     print(username)
