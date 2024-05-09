@@ -1,0 +1,32 @@
+{
+    "templates": [
+        {
+            "type": "LXC",
+            "tmpl_id": "1001",
+            "num_clones": 3,
+            "names": {
+                "prefix": "INFRA-",
+                "custom": []
+            }
+        },
+        {
+            "type": "VM",
+            "tmpl_id": "1002",
+            "num_clones": 2,
+            "names": {
+                "prefix": "",
+                "custom": ["Production", "Development"]
+            }
+        },
+        {
+            "type": "VM",
+            "tmpl_id": "1003",
+            "num_clones": 1,
+            "names": {
+                "prefix": null,
+                "custom": ["Test"]
+            }
+        }
+    ]
+}
+
