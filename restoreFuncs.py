@@ -24,7 +24,7 @@ def restore_qemu_backup(proxmox, backup_file, node, vmid):
     except Exception as e:
         print(f"Failed to restore backup {backup_file}. Error: {e}")
 
-def restore_backups(api_token,json_file, node):
+def restore_backups(api_token, node, json_file):
     proxmox = create_proxmox_api(api_token)
 
     if proxmox:
