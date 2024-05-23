@@ -26,7 +26,7 @@ def main():
     clones_file = sys.argv[4]
     node = os.getenv("NODE")
 
-#    restore_backups(api_token, node, backups_file)
+    restore_backups(api_token, node, backups_file)
 
 #=========================DEPLOY MACHINES=========================
     

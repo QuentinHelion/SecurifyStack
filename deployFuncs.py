@@ -9,7 +9,7 @@ def clone_lxc_template(proxmox, node, tmpl_ctid, new_ctid, new_ctname):
             full=0
         )
         print(f"LXC template {tmpl_ctid} cloned successfully. New CT ID: {new_ctid}, Name: {new_ctname}")
-        time.sleep(3)
+        time.sleep(10)
     except Exception as e:
         print(f"Failed to clone LXC template {tmpl_ctid}. Error: {e}")
 
