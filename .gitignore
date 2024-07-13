@@ -1,0 +1,4 @@
+States/
+.ter*
+credentials*
+terraform.tfvars
