@@ -6,11 +6,21 @@ def runOnProxmox(host, username, password, command):
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(host,username=username, password=password)
         stdin,stdout,stderr = ssh.exec_command(command)
-        print(stdout.read().decode())
+        output = stdout.read().decode()
+        error = stderr.read().decode()
+        if error:
+            print(f"SSH command error: {error}")
+            return False
+        print(output)
+        return True
     except paramiko.AuthenticationException:
-        print("Auth failed")
+        print("Authentication failed.")
+        return False
     except paramiko.SSHException as err:
-        print(f"Error setting SSH connection : {err}")
+        print(f"SSH connection error: {err}")
+        return False
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return False
     finally:
         ssh.close()
-
