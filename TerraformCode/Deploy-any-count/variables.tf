@@ -32,12 +32,12 @@ variable "vm_count" {
   default = 4
 }
 
-variable "vm_name_prefix" {
+variable "base_name" {
   description = "Prefix for VM names"
   type = string
 }
 
-variable "vm_id_start" {
+variable "start_vmid" {
   description = "Starting ID for the VMs"
   type = number
 }
@@ -60,7 +60,7 @@ variable "memory" {
   default = 2048
 }
 
-variable "ip_prefix" {
+variable "start_ip" {
   description = "IP address prefix (e.g., 10.0.10.20)"
   type = string
 }

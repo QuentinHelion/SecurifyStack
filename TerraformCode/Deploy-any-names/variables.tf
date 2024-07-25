@@ -11,11 +11,6 @@ variable "ssh_key" {
   default = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVWIb0okjcnObLrjAUOYf+ChFtD6pLjO1LKHAwe2ymi saade@MSI"
 }
 
-variable "hostnames" {
-  description = "List of hostnames for the VMs"
-  type = list(string)
-}
-
 variable "proxmox_api_url" {
   type = string
 }
@@ -30,7 +25,13 @@ variable "proxmox_api_token_secret" {
   sensitive = true
 }
 
-variable "vm_id_start" {
+
+variable "hostnames" {
+  description = "List of hostnames for the VMs"
+  type = list(string)
+}
+
+variable "start_vmid" {
   description = "Starting ID for the VMs"
   type = number
 }
@@ -53,7 +54,7 @@ variable "memory" {
   default = 2048
 }
 
-variable "ip_prefix" {
+variable "start_ip" {
   description = "IP address prefix (e.g., 10.0.10.20)"
   type = string
 }
